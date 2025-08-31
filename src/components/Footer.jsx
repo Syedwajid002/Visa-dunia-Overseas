@@ -10,6 +10,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import Logo from "../Assets/LogoW.png";
 
 const Footer = () => {
   return (
@@ -19,11 +20,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img
-                src="https://www.edumilestones.com/crm/images/visadunia-logoo.png-1710851770."
-                className="h-20 w-24"
-                alt=""
-              />
+              <img src={Logo} className="h-20 w-24" alt="" />
             </div>
             <p className="text-gray-300 mb-4">
               Your trusted partner for overseas education. Helping students

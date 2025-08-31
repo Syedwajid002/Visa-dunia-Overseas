@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, Menu, X, GraduationCap } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
+import Logo from "../Assets/VSO Logo.png";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -191,7 +193,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 my-4">
-            <img src="https://www.edumilestones.com/crm/images/visadunia-logoo.png-1710851770." alt="" className='h-16 w-20' />
+
+            <img src={Logo} alt="" className='h-20 w-20' />
           </Link>
 
           {/* Desktop Navigation */}
