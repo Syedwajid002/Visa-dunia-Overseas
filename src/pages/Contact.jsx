@@ -1,22 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID_ADMIN = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ADMIN;
+const TEMPLATE_ID_USER = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_USER;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     phone: "",
-    destinationCountry: "",
+    tenth_percent_year: "",
+    twelfth_percent_year: "",
+    bachelors_course_year: "",
+    bachelors_percent_backlogs: "",
+    gre_gmat: "",
+    english_test_scores: "",
+    work_experience: "",
+    gap_years: "",
+    preferred_country: "",
+    preferred_course: "",
+    intake: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const form = useRef();
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData((p) => ({ ...p, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
@@ -24,29 +39,35 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      // Send mail to Admin
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID_ADMIN,
+        form.current,
+        PUBLIC_KEY
+      );
 
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          destinationCountry: "",
-          message: "",
-        });
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
+      setIsSubmitted(true);
+      setFormData({
+        from_name: "",
+        from_email: "",
+        phone: "",
+        tenth_percent_year: "",
+        twelfth_percent_year: "",
+        bachelors_course_year: "",
+        bachelors_percent_backlogs: "",
+        gre_gmat: "",
+        english_test_scores: "",
+        work_experience: "",
+        gap_years: "",
+        preferred_country: "",
+        preferred_course: "",
+        intake: "",
+        message: "",
+      });
     } catch (error) {
-      console.error("Error:", error);
-      alert("Something went wrong. Please try again.");
+      console.error("FAILED...", error.text);
+      alert("Something went wrong. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -152,21 +173,21 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
-                  Send Us a Message
+                  STUDENT DETAILS – VISA DUNIA OVERSEAS
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6" ref={form}>
                   <div>
                     <label
-                      htmlFor="fullName"
+                      htmlFor="from_name"
                       className="block text-sm font-semibold text-gray-700 mb-2"
                     >
-                      Full Name *
+                      Name *
                     </label>
                     <input
                       type="text"
-                      id="fullName"
-                      name="fullName"
-                      value={formData.fullName}
+                      id="from_name"
+                      name="from_name"
+                      value={formData.from_name}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
@@ -174,72 +195,246 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="block text-sm font-semibold text-gray-700 mb-2"
-                      >
-                        Phone Number *
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
-                        placeholder="+91 99632 05226"
-                      />
-                    </div>
+                  <div>
+                    <label
+                      htmlFor="tenth_percent_year"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      10th – % and Year *
+                    </label>
+                    <input
+                      type="text"
+                      id="tenth_percent_year"
+                      name="tenth_percent_year"
+                      value={formData.tenth_percent_year}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 85% - 2017"
+                    />
                   </div>
 
                   <div>
                     <label
-                      htmlFor="destinationCountry"
+                      htmlFor="twelfth_percent_year"
                       className="block text-sm font-semibold text-gray-700 mb-2"
                     >
-                      Preferred Destination Country *
+                      12th – % and Year *
                     </label>
-                    <select
-                      id="destinationCountry"
-                      name="destinationCountry"
-                      value={formData.destinationCountry}
+                    <input
+                      type="text"
+                      id="twelfth_percent_year"
+                      name="twelfth_percent_year"
+                      value={formData.twelfth_percent_year}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 82% - 2019"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="bachelors_course_year"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Bachelor’s Degree – Course & Year *
+                    </label>
+                    <input
+                      type="text"
+                      id="bachelors_course_year"
+                      name="bachelors_course_year"
+                      value={formData.bachelors_course_year}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., B.Tech Computer Science - 2023"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="bachelors_percent_backlogs"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Bachelor’s – % and Backlogs (if any)
+                    </label>
+                    <input
+                      type="text"
+                      id="bachelors_percent_backlogs"
+                      name="bachelors_percent_backlogs"
+                      value={formData.bachelors_percent_backlogs}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 74% - 1 backlog"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="gre_gmat"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      GRE/GMAT – Verbal / Quant / AWA
+                    </label>
+                    <input
+                      type="text"
+                      id="gre_gmat"
+                      name="gre_gmat"
+                      value={formData.gre_gmat}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 315 (V: 155, Q: 160, AWA: 4.0)"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="english_test_scores"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      IELTS/TOEFL/Duolingo – Overall & (R/W/L/S)
+                    </label>
+                    <input
+                      type="text"
+                      id="english_test_scores"
+                      name="english_test_scores"
+                      value={formData.english_test_scores}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., IELTS 7.5 (R: 7, W: 7.5, L: 8, S: 7)"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="work_experience"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Work Experience (if any)
+                    </label>
+                    <input
+                      type="text"
+                      id="work_experience"
+                      name="work_experience"
+                      value={formData.work_experience}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 2 years at Infosys"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="gap_years"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Gap Years (if any)
+                    </label>
+                    <input
+                      type="text"
+                      id="gap_years"
+                      name="gap_years"
+                      value={formData.gap_years}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., 1 year gap after 12th"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="preferred_country"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Preferred Country *
+                    </label>
+                    <input
+                      type="text"
+                      id="preferred_country"
+                      name="preferred_country"
+                      value={formData.preferred_country}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="Country name"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="preferred_course"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Preferred Course *
+                    </label>
+                    <input
+                      type="text"
+                      id="preferred_course"
+                      name="preferred_course"
+                      value={formData.preferred_course}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="Master's in Data Science"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="intake"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Intake (Month & Year) *
+                    </label>
+                    <input
+                      type="text"
+                      id="intake"
+                      name="intake"
+                      value={formData.intake}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="E.g., September 2026"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="from_email"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="from_email"
+                      name="from_email"
+                      value={formData.from_email}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
                     >
-                      <option value="">Select a country</option>
-                      <option value="USA">United States</option>
-                      <option value="UK">United Kingdom</option>
-                      <option value="Canada">Canada</option>
-                      <option value="Australia">Australia</option>
-                      <option value="Germany">Germany</option>
-                      <option value="France">France</option>
-                      <option value="Netherlands">Netherlands</option>
-                      <option value="New Zealand">New Zealand</option>
-                      <option value="Other">Other</option>
-                    </select>
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
+                      placeholder="+91 99632 05226"
+                    />
                   </div>
 
                   <div>
@@ -247,7 +442,7 @@ const Contact = () => {
                       htmlFor="message"
                       className="block text-sm font-semibold text-gray-700 mb-2"
                     >
-                      Message *
+                      Additional Message *
                     </label>
                     <textarea
                       id="message"
