@@ -28,7 +28,7 @@ const Immigration = () => {
       country: "Canada",
       flag: "🇨🇦",
       image:
-        "https://images.pexels.com/photos/1574937/pexels-photo-1574937.jpeg?auto=compress&cs=tinysrgb&w=500",
+        "https://www.hindustantimes.com/ht-img/img/2025/04/26/550x309/A-Canadian-flag-flies-in-front-of-the-Detroit-skyl_1745660803498_1745666072927.jpg",
       programs: [
         {
           name: "Express Entry System",

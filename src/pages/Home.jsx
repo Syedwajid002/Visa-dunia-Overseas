@@ -28,25 +28,25 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Sneha Reddy",
+      country: "Germany",
+      text: "Studying in Germany was affordable and high-quality thanks to Visa Dunia's guidance. They helped me understand the German education system and secure admission without any hassle.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhgwV9uI6WL_EkfafSiSxyejNt52q5kF1-NgjEBuwxOErxVtcP3WXKPeU-GPrtDJIAtI&usqp=CAU",
+    },
+    {
+      name: "Imran Shareef",
       country: "Canada",
-      text: "Visa Dunia made my dream of studying in Canada a reality. Their support was incredible!",
+      text: "Visa Dunia made my dream of studying in Canada a reality. Their guidance through the application and visa process was exceptional. Now I'm pursuing my Master's at one of the top universities in the world!",
       image:
-        "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SpdrXZoDj1cXjViBoK6aWwShGpBfPRBRgw&s",
     },
     {
-      name: "Rahul Patel",
-      country: "USA",
-      text: "The team guided me through every step of the process. Now I'm studying at my dream university!",
+      name: "Vikram Singh",
+      country: "UK",
+      text: "Oxford was always a dream, and Visa Dunia made it possible. Their expertise in UK applications and scholarship guidance was invaluable. Forever grateful!",
       image:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150",
-    },
-    {
-      name: "Anita Gupta",
-      country: "Australia",
-      text: "Professional, reliable, and supportive. Highly recommend their services!",
-      image:
-        "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=150",
+        "https://thumbs.dreamstime.com/b/photo-handsome-stylish-casual-young-indian-25662209.jpg",
     },
   ];
 
@@ -135,7 +135,7 @@ const Home = () => {
               {
                 country: "USA",
                 image:
-                  "https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://www.credila.com/_next/image?url=%2Fimages%2Farticles%2Fbenefits-studying-in-the-usa.webp&w=3840&q=75",
                 universities: "4,000+",
                 description: "World's largest higher education system",
               },
@@ -149,7 +149,7 @@ const Home = () => {
               {
                 country: "Canada",
                 image:
-                  "https://images.pexels.com/photos/1574937/pexels-photo-1574937.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://www.hindustantimes.com/ht-img/img/2025/04/26/550x309/A-Canadian-flag-flies-in-front-of-the-Detroit-skyl_1745660803498_1745666072927.jpg",
                 universities: "100+",
                 description: "Affordable quality education & immigration",
               },
@@ -260,7 +260,7 @@ const Home = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-4 w-4 text-gray-700 fill-current"
+                      className="h-4 w-4 text-yellow-400 fill-current"
                     />
                   ))}
                 </div>
