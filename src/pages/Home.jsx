@@ -1,34 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  ArrowRight,
-  Users,
-  Award,
-  Globe,
-  BookOpen,
-  CheckCircle,
-  Star,
-} from "lucide-react";
+import { ArrowRight, Users, Award, Globe, BookOpen, Star } from "lucide-react";
 
 const Home = () => {
   const features = [
     {
-      icon: <Users className="h-8 w-8 text-orange-500" />,
+      icon: <Users className="h-8 w-8 text-gray-800" />,
       title: "Expert Counselors",
       description: "Experienced professionals to guide your education journey",
     },
     {
-      icon: <Award className="h-8 w-8 text-orange-500" />,
+      icon: <Award className="h-8 w-8 text-gray-800" />,
       title: "100% Success Rate",
       description: "Proven track record of successful admissions",
     },
     {
-      icon: <Globe className="h-8 w-8 text-orange-500" />,
+      icon: <Globe className="h-8 w-8 text-gray-800" />,
       title: "Global Network",
       description: "Partnerships with universities worldwide",
     },
     {
-      icon: <BookOpen className="h-8 w-8 text-orange-500" />,
+      icon: <BookOpen className="h-8 w-8 text-gray-800" />,
       title: "Complete Support",
       description: "End-to-end assistance from application to arrival",
     },
@@ -59,17 +51,17 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-20">
+      <section className="bg-gradient-to-br from-black to-gray-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Start Your Study Abroad Journey with{" "}
-                <span className="text-orange-400">Visa Dunia Overseas</span>
+                <span className="text-gray-300">Visa Dunia Overseas</span>
               </h1>
-              <p className="text-xl mb-8 text-blue-100 leading-relaxed">
+              <p className="text-xl mb-8 text-gray-300 leading-relaxed">
                 Transform your future with world-class education. We provide
                 expert guidance, visa assistance, and complete support for your
                 international education dreams.
@@ -77,14 +69,14 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                  className="bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
                 >
                   Get Started Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
                   to="/study-destinations"
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                  className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
                 >
                   Explore Destinations
                 </Link>
@@ -116,7 +108,7 @@ const Home = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+                className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-gray-50"
               >
                 <div className="flex justify-center mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -128,7 +120,7 @@ const Home = () => {
       </section>
 
       {/* Popular Destinations */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -173,13 +165,13 @@ const Home = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{dest.country}</h3>
-                  <p className="text-orange-500 font-semibold mb-2">
+                  <p className="text-gray-800 font-semibold mb-2">
                     {dest.universities} Universities
                   </p>
                   <p className="text-gray-600 mb-4">{dest.description}</p>
                   <Link
                     to={`/country/${dest.country.toLowerCase()}`}
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded font-semibold transition-colors inline-flex items-center"
+                    className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded font-semibold transition-colors inline-flex items-center"
                   >
                     Explore {dest.country}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -226,7 +218,7 @@ const Home = () => {
               },
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{process.title}</h3>
@@ -238,13 +230,13 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-blue-700">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               What Our Students Say
             </h2>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-gray-300">
               Success stories from our amazing students
             </p>
           </div>
@@ -268,7 +260,7 @@ const Home = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-4 w-4 text-yellow-400 fill-current"
+                      className="h-4 w-4 text-gray-700 fill-current"
                     />
                   ))}
                 </div>
@@ -280,25 +272,25 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-500">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Ready to Start Your Journey?
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-xl text-gray-400 mb-8">
             Get expert guidance and make your study abroad dreams come true
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Book Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/gallery"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               View Success Stories
             </Link>

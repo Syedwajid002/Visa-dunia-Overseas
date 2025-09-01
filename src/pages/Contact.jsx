@@ -54,19 +54,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="h-6 w-6 text-orange-500" />,
+      icon: <Phone className="h-6 w-6 text-black" />,
       title: "Phone Numbers",
       details: ["+91 99632 05226", "+91 87654 32109"],
       subtitle: "Call us anytime",
     },
     {
-      icon: <Mail className="h-6 w-6 text-orange-500" />,
+      icon: <Mail className="h-6 w-6 text-black" />,
       title: "Email Addresses",
       details: ["info@visaduniaoverseas.com", "support@visaduniaoverseas.com"],
       subtitle: "We'll respond within 24 hours",
     },
     {
-      icon: <MapPin className="h-6 w-6 text-orange-500" />,
+      icon: <MapPin className="h-6 w-6 text-black" />,
       title: "Office Address",
       details: [
         "Laxmi Theater Complex",
@@ -76,7 +76,7 @@ const Contact = () => {
       subtitle: "Visit us for face-to-face consultation",
     },
     {
-      icon: <Clock className="h-6 w-6 text-orange-500" />,
+      icon: <Clock className="h-6 w-6 text-black" />,
       title: "Office Hours",
       details: [
         "Monday - Friday: 9:00 AM - 7:00 PM",
@@ -110,9 +110,9 @@ const Contact = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-green-50">
-        <div className="max-w-md mx-auto text-center p-8">
-          <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="max-w-md mx-auto text-center p-8 bg-white shadow-lg rounded-xl">
+          <CheckCircle className="h-16 w-16 text-black mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h2>
           <p className="text-lg text-gray-700 mb-6">
             Your message has been sent successfully. We'll get back to you
@@ -120,7 +120,7 @@ const Contact = () => {
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             Send Another Message
           </button>
@@ -132,27 +132,25 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 to-indigo-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Get In Touch With Us
-            </h1>
-            <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto">
-              Ready to start your study abroad journey? Contact our expert
-              counselors for personalized guidance.
-            </p>
-          </div>
+      <section className="bg-black text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            Get In Touch With Us
+          </h1>
+          <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">
+            Ready to start your study abroad journey? Contact our expert
+            counselors for personalized guidance.
+          </p>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                   Send Us a Message
                 </h2>
@@ -171,7 +169,7 @@ const Contact = () => {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -191,7 +189,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
                         placeholder="your.email@example.com"
                       />
                     </div>
@@ -210,7 +208,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
                         placeholder="+91 99632 05226"
                       />
                     </div>
@@ -229,7 +227,7 @@ const Contact = () => {
                       value={formData.destinationCountry}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
                     >
                       <option value="">Select a country</option>
                       <option value="USA">United States</option>
@@ -258,15 +256,15 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors resize-none"
-                      placeholder="Tell us about your study abroad goals, preferred programs, or any questions you have..."
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none"
+                      placeholder="Tell us about your study abroad goals..."
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
+                    className="w-full bg-black hover:bg-gray-800 disabled:bg-gray-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
                   >
                     {isSubmitting ? (
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
@@ -284,16 +282,17 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
+                <div
+                  key={index}
+                  className="bg-gray-50 p-6 rounded-xl shadow-lg"
+                >
                   <div className="flex items-center space-x-3 mb-4">
                     {info.icon}
                     <h3 className="text-lg font-bold text-gray-900">
                       {info.title}
                     </h3>
                   </div>
-                  <p className="text-orange-500 text-sm mb-3">
-                    {info.subtitle}
-                  </p>
+                  <p className="text-gray-500 text-sm mb-3">{info.subtitle}</p>
                   <div className="space-y-2">
                     {info.details.map((detail, idx) => (
                       <p key={idx} className="text-gray-700">
@@ -309,7 +308,7 @@ const Contact = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -323,22 +322,22 @@ const Contact = () => {
             {offices.map((office, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-shadow"
+                className="bg-white p-6 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-shadow"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   {office.city} Office
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start justify-center space-x-2">
-                    <MapPin className="h-5 w-5 text-orange-500 mt-1" />
+                    <MapPin className="h-5 w-5 text-black mt-1" />
                     <p className="text-sm">{office.address}</p>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <Phone className="h-5 w-5 text-orange-500" />
+                    <Phone className="h-5 w-5 text-black" />
                     <p className="text-sm">{office.phone}</p>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <Mail className="h-5 w-5 text-orange-500" />
+                    <Mail className="h-5 w-5 text-black" />
                     <p className="text-sm">{office.email}</p>
                   </div>
                 </div>

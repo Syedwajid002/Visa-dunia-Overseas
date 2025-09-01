@@ -118,13 +118,13 @@ const Gallery = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-700 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-r from-black to-gray-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Student Success Gallery
             </h1>
-            <p className="text-xl lg:text-2xl text-purple-100 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">
               Celebrating the achievements of our students who are now thriving
               in universities around the world.
             </p>
@@ -161,7 +161,7 @@ const Gallery = () => {
                       <h3 className="text-xl font-bold text-gray-900">
                         {story.name}
                       </h3>
-                      <p className="text-orange-500 font-semibold">
+                      <p className="text-gray-700 font-semibold">
                         {story.program}
                       </p>
                       <div className="flex items-center space-x-4 text-sm text-gray-600 mt-2">
@@ -179,11 +179,11 @@ const Gallery = () => {
                     </div>
                   </div>
 
-                  <div className="bg-green-50 p-4 rounded-lg mb-4">
-                    <div className="text-green-800 font-semibold text-sm">
+                  <div className="bg-gray-100 p-4 rounded-lg mb-4">
+                    <div className="text-gray-900 font-semibold text-sm">
                       Achievement:
                     </div>
-                    <div className="text-green-700">{story.achievement}</div>
+                    <div className="text-gray-700">{story.achievement}</div>
                   </div>
 
                   <div className="relative">
@@ -197,7 +197,7 @@ const Gallery = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className="h-4 w-4 text-yellow-400 fill-current"
+                        className="h-4 w-4 text-gray-800 fill-current"
                       />
                     ))}
                   </div>
@@ -243,7 +243,7 @@ const Gallery = () => {
       </section>
 
       {/* Statistics */}
-      <section className="py-16 bg-blue-700 text-white">
+      <section className="py-16 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -258,10 +258,10 @@ const Gallery = () => {
               { number: "98%", label: "Success Rate" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-orange-400 mb-2">
+                <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
                   {stat.number}
                 </div>
-                <div className="text-blue-100 font-medium">{stat.label}</div>
+                <div className="text-gray-300 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -269,18 +269,18 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-500">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Want to Be Our Next Success Story?
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-xl text-gray-300 mb-8">
             Join thousands of successful students and start your study abroad
             journey with expert guidance.
           </p>
           <Link
             to="/contact"
-            className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-black hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Start Your Journey
             <ArrowRight className="ml-2 h-5 w-5" />
