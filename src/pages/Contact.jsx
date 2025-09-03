@@ -47,6 +47,20 @@ const Contact = () => {
         PUBLIC_KEY
       );
 
+      const sheetMonkeyURL =
+        "https://api.sheetmonkey.io/form/uv1v3Bm4BN1DHNdzv7zFzp";
+
+      fetch(sheetMonkeyURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log("SheetMonkey response:", data))
+        .catch((error) =>
+          console.error("Error submitting to SheetMonkey:", error)
+        );
+
       setIsSubmitted(true);
       setFormData({
         from_name: "",
