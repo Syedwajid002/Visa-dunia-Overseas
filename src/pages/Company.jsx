@@ -48,21 +48,21 @@ const Company = () => {
 
   const team = [
     {
-      name: "Dr. Rajesh Kumar",
+      name: "Mohammed Ishaq",
       position: "Founder & CEO",
-      experience: "15+ years",
+      experience: "5+ years",
       image:
-        "https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "https://firebasestorage.googleapis.com/v0/b/mjpwgl.appspot.com/o/other%2FScreenshot%202025-09-05%20211829.png?alt=media&token=61798592-f388-48a4-a95f-c7f1c99feefa",
       specialization: "International Education Strategy",
       description:
         "Former university administrator with extensive experience in global education partnerships.",
     },
     {
-      name: "Ms. Priya Sharma",
+      name: "Mohammed Ashwaq",
       position: "Head of Counseling",
       experience: "12+ years",
       image:
-        "https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "https://media.istockphoto.com/id/613557584/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=hkCg5CrmTKOApePbPOyo1U9GexEfIJOJqoLXJIvcN8E=",
       specialization: "Student Counseling & Guidance",
       description:
         "Certified education counselor who has guided over 2000+ students to their dream universities.",
@@ -78,11 +78,11 @@ const Company = () => {
         "Former visa officer with deep understanding of international visa regulations and processes.",
     },
     {
-      name: "Ms. Sarah Johnson",
+      name: "Ms. kin Johnson",
       position: "International Relations Manager",
       experience: "8+ years",
       image:
-        "https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "https://bsmedia.business-standard.com/_media/bs/img/article/2025-06/12/full/20250611112440.jpg",
       specialization: "University Partnerships",
       description:
         "Maintains relationships with 500+ universities across 15+ countries worldwide.",
