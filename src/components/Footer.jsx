@@ -41,7 +41,7 @@ const Footer = () => {
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/visadunia/"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
