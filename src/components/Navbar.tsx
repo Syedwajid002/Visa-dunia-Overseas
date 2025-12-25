@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import Logo from "../Assets/LogoB.png";
+import Logo from "../Assets/Logo_WhiteBG.png";
 
 
 const Navbar = () => {
@@ -194,7 +194,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 my-4">
 
-            <img src={Logo} alt="" className='h-20 w-20' />
+            <img src={Logo} alt="" className='h-28 w-28 mb-2' />
           </Link>
 
           {/* Desktop Navigation */}

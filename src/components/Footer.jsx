@@ -10,7 +10,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import Logo from "../Assets/LogoW.png";
+import Logo from "../Assets/Logo_BlueBG.png";
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img src={Logo} className="h-20 w-24" alt="" />
+              <img src={Logo} className="h-28 w-32" alt="" />
             </div>
             <p className="text-gray-300 mb-4">
               Your trusted partner for overseas education. Helping students
