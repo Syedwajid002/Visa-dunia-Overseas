@@ -54,7 +54,7 @@ const Company = () => {
       name: "Mohammed Ishaq",
       position: "Founder & CEO",
       experience: "3+ years",
-      image: { CeoLogo },
+      image: CeoLogo,
       specialization: "International Education Strategy",
       description:
         "Former university administrator with extensive experience in global education partnerships.",
@@ -63,7 +63,7 @@ const Company = () => {
       name: "Mohammed Ashwaq",
       position: "Co-Founder & Managing Director",
       experience: "2+ years",
-      image: { Ashwaq },
+      image: Ashwaq,
       specialization: "Student Counseling & Guidance",
       description:
         "Certified education counselor who has guided over 2000+ students to their dream universities.",
@@ -72,7 +72,7 @@ const Company = () => {
       name: "Nandhini Madishetty",
       position: "Marketing & Admission Counselor",
       experience: "4+ years",
-      image: { Nandini },
+      image: Nandini,
       specialization: "Immigration & Visa Processing",
       description:
         "Former visa officer with deep understanding of international visa regulations and processes.",
