@@ -446,7 +446,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
-                      placeholder="+91 99632 05226"
+                      placeholder="+91 99632 XXXXX"
                     />
                   </div>
 

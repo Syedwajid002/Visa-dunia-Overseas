@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Users, Target, Globe, ArrowRight, Heart, Star } from "lucide-react";
+import CeoLogo from "../Assets/Ishaq.png";
+import Ashwaq from "../Assets/Ashwaq.png";
+import Nandini from "../Assets/Nandini.png";
 
 const theme = {
   // Core palette
@@ -50,42 +53,29 @@ const Company = () => {
     {
       name: "Mohammed Ishaq",
       position: "Founder & CEO",
-      experience: "5+ years",
-      image:
-        "https://firebasestorage.googleapis.com/v0/b/mjpwgl.appspot.com/o/other%2FScreenshot%202025-09-05%20211829.png?alt=media&token=61798592-f388-48a4-a95f-c7f1c99feefa",
+      experience: "3+ years",
+      image: { CeoLogo },
       specialization: "International Education Strategy",
       description:
         "Former university administrator with extensive experience in global education partnerships.",
     },
     {
       name: "Mohammed Ashwaq",
-      position: "Head of Counseling",
-      experience: "12+ years",
-      image:
-        "https://media.istockphoto.com/id/613557584/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=hkCg5CrmTKOApePbPOyo1U9GexEfIJOJqoLXJIvcN8E=",
+      position: "Co-Founder & Managing Director",
+      experience: "2+ years",
+      image: { Ashwaq },
       specialization: "Student Counseling & Guidance",
       description:
         "Certified education counselor who has guided over 2000+ students to their dream universities.",
     },
     {
-      name: "Mr. Amit Patel",
-      position: "Visa Specialist",
-      experience: "10+ years",
-      image:
-        "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=300",
+      name: "Nandhini Madishetty",
+      position: "Marketing & Admission Counselor",
+      experience: "4+ years",
+      image: { Nandini },
       specialization: "Immigration & Visa Processing",
       description:
         "Former visa officer with deep understanding of international visa regulations and processes.",
-    },
-    {
-      name: "Ms. kin Johnson",
-      position: "International Relations Manager",
-      experience: "8+ years",
-      image:
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2025-06/12/full/20250611112440.jpg",
-      specialization: "University Partnerships",
-      description:
-        "Maintains relationships with 500+ universities across 15+ countries worldwide.",
     },
   ];
 
@@ -109,7 +99,7 @@ const Company = () => {
               <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed">
                 Empowering students to achieve their international education
                 dreams through expert guidance and unwavering support since
-                2010.
+                2024.
               </p>
               <Link
                 to="/contact"

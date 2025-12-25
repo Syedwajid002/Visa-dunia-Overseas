@@ -41,24 +41,6 @@ const StudyDestinations = () => {
         "Experience centuries of academic excellence in the birthplace of the English language.",
     },
     {
-      country: "Canada",
-      flag: "🇨🇦",
-      image:
-        "https://images.pexels.com/photos/1574937/pexels-photo-1574937.jpeg?auto=compress&cs=tinysrgb&w=500",
-      universities: "100+",
-      students: "400K+",
-      tuition: "CAD $15,000-$35,000",
-      duration: "2-4 years",
-      highlights: [
-        "Immigration-friendly policies",
-        "Safe and welcoming",
-        "Affordable tuition",
-        "Work while studying",
-      ],
-      description:
-        "Known for its welcoming immigration policies and high-quality, affordable education.",
-    },
-    {
       country: "Australia",
       flag: "🇦🇺",
       image:
@@ -93,6 +75,24 @@ const StudyDestinations = () => {
       ],
       description:
         "Europe's largest economy offering affordable, high-quality education, especially in engineering and technology.",
+    },
+    {
+      country: "Canada",
+      flag: "🇨🇦",
+      image:
+        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fkids.nationalgeographic.com%2Fgeography%2Fcountries%2Farticle%2Fcanada&psig=AOvVaw3FFf_ejBgbfXAQz5qCJg9V&ust=1764685768368000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIiq4_bMnJEDFQAAAAAdAAAAABAE",
+      universities: "100+",
+      students: "400K+",
+      tuition: "CAD $15,000-$35,000",
+      duration: "2-4 years",
+      highlights: [
+        "Immigration-friendly policies",
+        "Safe and welcoming",
+        "Affordable tuition",
+        "Work while studying",
+      ],
+      description:
+        "Known for its welcoming immigration policies and high-quality, affordable education.",
     },
     {
       country: "France",
@@ -152,6 +152,19 @@ const StudyDestinations = () => {
                     src={dest.image}
                     alt={dest.country}
                     className="w-full h-64 object-cover"
+                    onError={(e) => {
+                      console.log(
+                        `Image failed to load for ${dest.country}:`,
+                        e.target.src
+                      );
+                      e.target.src =
+                        "https://via.placeholder.com/500x300?text=Image+Not+Found";
+                    }}
+                    onLoad={() =>
+                      console.log(
+                        `Image loaded successfully for ${dest.country}`
+                      )
+                    }
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow">
                     <span className="text-2xl mr-2">{dest.flag}</span>

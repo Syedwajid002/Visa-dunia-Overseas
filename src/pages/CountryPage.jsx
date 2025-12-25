@@ -18,7 +18,7 @@ const CountryPage = () => {
     usa: {
       name: "United States",
       flag: "🇺🇸",
-      hero: "https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hero: "https://acko-cms.ackoassets.com/Best_cities_in_usa_11_22713344bb.png",
       overview:
         "The United States hosts the world's largest number of international students, offering unparalleled diversity in higher education with over 4,000 institutions.",
       stats: {
@@ -121,7 +121,7 @@ const CountryPage = () => {
     canada: {
       name: "Canada",
       flag: "🇨🇦",
-      hero: "https://images.pexels.com/photos/1574937/pexels-photo-1574937.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hero: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Toronto_skyline%2C_2024_%2852592814618%29.jpg/1280px-Toronto_skyline%2C_2024_%2852592814618%29.jpg",
       overview:
         "Canada is known for its high-quality education, welcoming environment, and immigration-friendly policies, making it a top choice for international students.",
       stats: {
@@ -207,7 +207,7 @@ const CountryPage = () => {
     germany: {
       name: "Germany",
       flag: "🇩🇪",
-      hero: "https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=800",
+      hero: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/221000/221197-North-Rhine-Westphalia.jpg",
       overview:
         "Germany is Europe’s economic powerhouse offering world-class education, especially in engineering and sciences, often with very low tuition fees.",
       stats: {

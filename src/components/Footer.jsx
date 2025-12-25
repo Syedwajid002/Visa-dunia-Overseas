@@ -6,10 +6,10 @@ import {
   Mail,
   MapPin,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Logo from "../Assets/LogoW.png";
 
 const Footer = () => {
@@ -29,25 +29,33 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="#"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
                 <Facebook className="h-6 w-6" />
               </a>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="#"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
-                <Twitter className="h-6 w-6" />
+                <FaWhatsapp className="h-6 w-6" />
               </a>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/visadunia/"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/visa-dunia-overseas/"
                 className="text-gray-300 hover:text-orange-500 transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
@@ -135,7 +143,7 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-orange-500" />
                 <span className="text-gray-300">
-                  info@visaduniaoverseas.com
+                  visaduniaoverseas@gmail.com
                 </span>
               </div>
               <div className="flex items-start space-x-2">

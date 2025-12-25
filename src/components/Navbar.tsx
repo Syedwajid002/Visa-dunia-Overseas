@@ -39,7 +39,7 @@ const Navbar = () => {
       {
         title: 'USA',
         link: '/country/usa',
-        image: 'https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg?auto=compress&cs=tinysrgb&w=150',
+        image: 'https://www.flamingotravels.co.in/blog/wp-content/uploads/2023/01/Feture-image.jpg',
         description: 'Land of opportunities & innovation'
       },
       {
@@ -51,7 +51,7 @@ const Navbar = () => {
       {
         title: 'Canada',
         link: '/country/canada',
-        image: 'https://images.pexels.com/photos/1574937/pexels-photo-1574937.jpeg?auto=compress&cs=tinysrgb&w=150',
+        image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/42/89/9e/photo0jpg.jpg?w=500&h=-1&s=1',
         description: 'Welcoming & diverse society'
       },
       {
@@ -63,7 +63,7 @@ const Navbar = () => {
       {
         title: 'Germany',
         link: '/country/germany',
-        image: 'https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=150',
+        image: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/221000/221197-North-Rhine-Westphalia.jpg',
         description: 'Engineering & technology hub'
       },
       {

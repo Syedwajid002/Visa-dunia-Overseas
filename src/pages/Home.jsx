@@ -142,7 +142,7 @@ const Home = () => {
               {
                 country: "UK",
                 image:
-                  "https://images.pexels.com/photos/726484/pexels-photo-726484.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://in2english.net/wp-content/uploads/2019/01/the-uk-800x383.jpg",
                 universities: "150+",
                 description: "Home to world's oldest universities",
               },
