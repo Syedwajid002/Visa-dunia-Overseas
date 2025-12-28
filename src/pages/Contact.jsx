@@ -90,22 +90,23 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-black" />,
       title: "Phone Numbers",
-      details: ["+91 99632 05226", "+91 87654 32109"],
+      details: ["+91 99632 05226", "+91 86390 42341"],
       subtitle: "Call us anytime",
     },
     {
       icon: <Mail className="h-6 w-6 text-black" />,
       title: "Email Addresses",
-      details: ["info@visaduniaoverseas.com", "support@visaduniaoverseas.com"],
+      details: ["info@visadunia.in"],
       subtitle: "We'll respond within 24 hours",
     },
     {
       icon: <MapPin className="h-6 w-6 text-black" />,
       title: "Office Address",
       details: [
-        "Laxmi Theater Complex",
-        "J.P.N Road Warangal;",
-        "Telangna, India 506002",
+        "Visa Dunia Overseas",
+        "1st Floor Shop number F31",
+        "Nirmala Mall, Jayaprakash Narayan Road, Charbowli, Girmajipet,",
+        "Warangal, Telangana 506002, India",
       ],
       subtitle: "Visit us for face-to-face consultation",
     },
@@ -149,7 +150,7 @@ const Contact = () => {
           <CheckCircle className="h-16 w-16 text-black mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h2>
           <p className="text-lg text-gray-700 mb-6">
-            Your message has been sent successfully. We'll get back to you
+            Your Request has been Received successfully. We'll get back to you
             within 24 hours.
           </p>
           <button
@@ -207,211 +208,6 @@ const Contact = () => {
                       placeholder="Enter your full name"
                     />
                   </div>
-
-                  <div>
-                    <label
-                      htmlFor="tenth_percent_year"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      10th – % and Year *
-                    </label>
-                    <input
-                      type="text"
-                      id="tenth_percent_year"
-                      name="tenth_percent_year"
-                      value={formData.tenth_percent_year}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 85% - 2017"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="twelfth_percent_year"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      12th – % and Year *
-                    </label>
-                    <input
-                      type="text"
-                      id="twelfth_percent_year"
-                      name="twelfth_percent_year"
-                      value={formData.twelfth_percent_year}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 82% - 2019"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="bachelors_course_year"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Bachelor’s Degree – Course & Year *
-                    </label>
-                    <input
-                      type="text"
-                      id="bachelors_course_year"
-                      name="bachelors_course_year"
-                      value={formData.bachelors_course_year}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., B.Tech Computer Science - 2023"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="bachelors_percent_backlogs"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Bachelor’s – % and Backlogs (if any)
-                    </label>
-                    <input
-                      type="text"
-                      id="bachelors_percent_backlogs"
-                      name="bachelors_percent_backlogs"
-                      value={formData.bachelors_percent_backlogs}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 74% - 1 backlog"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="gre_gmat"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      GRE/GMAT – Verbal / Quant / AWA
-                    </label>
-                    <input
-                      type="text"
-                      id="gre_gmat"
-                      name="gre_gmat"
-                      value={formData.gre_gmat}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 315 (V: 155, Q: 160, AWA: 4.0)"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="english_test_scores"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      IELTS/TOEFL/Duolingo – Overall & (R/W/L/S)
-                    </label>
-                    <input
-                      type="text"
-                      id="english_test_scores"
-                      name="english_test_scores"
-                      value={formData.english_test_scores}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., IELTS 7.5 (R: 7, W: 7.5, L: 8, S: 7)"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="work_experience"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Work Experience (if any)
-                    </label>
-                    <input
-                      type="text"
-                      id="work_experience"
-                      name="work_experience"
-                      value={formData.work_experience}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 2 years at Infosys"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="gap_years"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Gap Years (if any)
-                    </label>
-                    <input
-                      type="text"
-                      id="gap_years"
-                      name="gap_years"
-                      value={formData.gap_years}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., 1 year gap after 12th"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="preferred_country"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Preferred Country *
-                    </label>
-                    <input
-                      type="text"
-                      id="preferred_country"
-                      name="preferred_country"
-                      value={formData.preferred_country}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="Country name"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="preferred_course"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Preferred Course *
-                    </label>
-                    <input
-                      type="text"
-                      id="preferred_course"
-                      name="preferred_course"
-                      value={formData.preferred_course}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="Master's in Data Science"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="intake"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
-                    >
-                      Intake (Month & Year) *
-                    </label>
-                    <input
-                      type="text"
-                      id="intake"
-                      name="intake"
-                      value={formData.intake}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                      placeholder="E.g., September 2026"
-                    />
-                  </div>
-
                   <div>
                     <label
                       htmlFor="from_email"
@@ -452,6 +248,44 @@ const Contact = () => {
 
                   <div>
                     <label
+                      htmlFor="preferred_country"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Preferred Country *
+                    </label>
+                    <input
+                      type="text"
+                      id="preferred_country"
+                      name="preferred_country"
+                      value={formData.preferred_country}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="Country name"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="preferred_course"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Interested program *
+                    </label>
+                    <input
+                      type="text"
+                      id="preferred_course"
+                      name="preferred_course"
+                      value={formData.preferred_course}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                      placeholder="Master's in Data Science"
+                    />
+                  </div>
+
+                  <div>
+                    <label
                       htmlFor="message"
                       className="block text-sm font-semibold text-gray-700 mb-2"
                     >
@@ -478,7 +312,7 @@ const Contact = () => {
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
                     ) : (
                       <>
-                        Send Message
+                        Request Enquiry
                         <Send className="ml-2 h-5 w-5" />
                       </>
                     )}

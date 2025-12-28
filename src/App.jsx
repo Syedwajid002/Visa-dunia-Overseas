@@ -13,6 +13,7 @@ import Gallery from "./pages/Gallery";
 import ReferEarn from "./pages/ReferEarn";
 import Contact from "./pages/Contact";
 import CountryPage from "./pages/CountryPage";
+import WhatsAppFloat from "./components/WhatsappFloat";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/country/:country" element={<CountryPage />} />
         </Routes>
         <Footer />
+        <WhatsAppFloat />
       </div>
     </Router>
   );

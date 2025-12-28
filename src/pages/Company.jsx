@@ -71,11 +71,11 @@ const Company = () => {
     {
       name: "Nandhini Madishetty",
       position: "Marketing & Admission Counselor",
-      experience: "4+ years",
+      experience: "3+ years",
       image: Nandini,
-      specialization: "Immigration & Visa Processing",
+      specialization: "Student Counseling & Guidance",
       description:
-        "Former visa officer with deep understanding of international visa regulations and processes.",
+        "Education counselor with 3 years of experience supporting students through admissions and study-abroad processes.",
     },
   ];
 
