@@ -16,7 +16,7 @@ const TestPrep = () => {
     {
       name: "IELTS",
       fullName: "International English Language Testing System",
-      icon: <BookOpen className="h-12 w-12 text-neutral-200" />,
+      icon: <BookOpen className="h-12 w-12 text-white" />,
       image:
         "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500",
       duration: "2 hours 45 minutes",
@@ -42,7 +42,7 @@ const TestPrep = () => {
     {
       name: "TOEFL",
       fullName: "Test of English as a Foreign Language",
-      icon: <Target className="h-12 w-12 text-neutral-200" />,
+      icon: <Target className="h-12 w-12 text-white" />,
       image:
         "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=500",
       duration: "3 hours",
@@ -68,7 +68,7 @@ const TestPrep = () => {
     {
       name: "GRE",
       fullName: "Graduate Record Examination",
-      icon: <TrendingUp className="h-12 w-12 text-neutral-200" />,
+      icon: <TrendingUp className="h-12 w-12 text-white" />,
       image:
         "https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=500",
       duration: "3 hours 45 minutes",
@@ -93,7 +93,7 @@ const TestPrep = () => {
     {
       name: "GMAT",
       fullName: "Graduate Management Admission Test",
-      icon: <Award className="h-12 w-12 text-neutral-200" />,
+      icon: <Award className="h-12 w-12 text-white" />,
       image:
         "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=500",
       duration: "3 hours 7 minutes",
@@ -120,45 +120,45 @@ const TestPrep = () => {
 
   const preparationFeatures = [
     {
-      icon: <Users className="h-8 w-8 text-neutral-300" />,
+      icon: <Users className="h-8 w-8 text-[#035079]" />,
       title: "Expert Faculty",
       description:
         "Learn from certified trainers with years of teaching experience",
     },
     {
-      icon: <Clock className="h-8 w-8 text-neutral-300" />,
+      icon: <Clock className="h-8 w-8 text-[#035079]" />,
       title: "Flexible Timing",
       description: "Weekend and evening batches to fit your schedule",
     },
     {
-      icon: <Target className="h-8 w-8 text-neutral-300" />,
+      icon: <Target className="h-8 w-8 text-[#035079]" />,
       title: "Personalized Approach",
       description:
         "Customized study plans based on your strengths and weaknesses",
     },
     {
-      icon: <Award className="h-8 w-8 text-neutral-300" />,
+      icon: <Award className="h-8 w-8 text-[#035079]" />,
       title: "Proven Results",
       description: "95% of our students achieve their target scores",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100">
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-950 to-neutral-900 py-20">
+      <section className="bg-gradient-to-br from-[#035079] to-[#024461] text-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-neutral-50">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Test Preparation Programs
             </h1>
-            <p className="text-xl lg:text-2xl text-neutral-400 max-w-3xl mx-auto mb-8">
+            <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
               Achieve your target scores with our comprehensive test preparation
               programs designed for success.
             </p>
             <Link
               to="/contact"
-              className="bg-neutral-200 hover:bg-neutral-300 text-neutral-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+              className="bg-white hover:bg-blue-50 text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
             >
               Enroll Now
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -168,13 +168,13 @@ const TestPrep = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-neutral-950">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-neutral-50 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Our Test Prep Programs?
             </h2>
-            <p className="text-xl text-neutral-400">
+            <p className="text-xl text-gray-600">
               Get the best preparation with our proven methodology
             </p>
           </div>
@@ -182,13 +182,13 @@ const TestPrep = () => {
             {preparationFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-xl bg-neutral-900/70 border border-neutral-800 hover:shadow-lg transition-shadow"
+                className="text-center p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg transition-shadow"
               >
                 <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-neutral-100 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-neutral-400">{feature.description}</p>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -196,13 +196,13 @@ const TestPrep = () => {
       </section>
 
       {/* Tests Section */}
-      <section className="py-16 bg-gradient-to-b from-neutral-950 to-neutral-900">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-neutral-50 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Our Test Preparation Programs
             </h2>
-            <p className="text-xl text-neutral-400">
+            <p className="text-xl text-gray-600">
               Comprehensive preparation for all major standardized tests
             </p>
           </div>
@@ -210,56 +210,54 @@ const TestPrep = () => {
             {tests.map((test, index) => (
               <div
                 key={index}
-                className="bg-neutral-900 rounded-xl shadow-lg overflow-hidden"
+                className="bg-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-200"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                   <div className="p-8 lg:p-12">
-                    <div className="flex items-center space-x-4 mb-6">
+                    <div className="flex items-center space-x-4 mb-6 bg-[#035079] text-white p-4 rounded-lg inline-flex">
                       {test.icon}
                       <div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-neutral-100">
+                        <h3 className="text-2xl lg:text-3xl font-bold">
                           {test.name}
                         </h3>
-                        <p className="text-neutral-400">{test.fullName}</p>
+                        <p className="text-blue-100">{test.fullName}</p>
                       </div>
                     </div>
-                    <p className="text-lg text-neutral-300 mb-6 leading-relaxed">
+                    <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                       {test.description}
                     </p>
 
                     {/* Test Details */}
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div>
-                        <div className="text-neutral-300 font-semibold">
+                        <div className="text-gray-900 font-semibold">
                           Duration
                         </div>
-                        <div className="text-neutral-400">{test.duration}</div>
+                        <div className="text-gray-600">{test.duration}</div>
                       </div>
                       <div>
-                        <div className="text-neutral-300 font-semibold">
+                        <div className="text-gray-900 font-semibold">
                           Validity
                         </div>
-                        <div className="text-neutral-400">{test.validity}</div>
+                        <div className="text-gray-600">{test.validity}</div>
                       </div>
                       <div>
-                        <div className="text-neutral-300 font-semibold">
+                        <div className="text-gray-900 font-semibold">
                           Format
                         </div>
-                        <div className="text-neutral-400">{test.format}</div>
+                        <div className="text-gray-600">{test.format}</div>
                       </div>
                       <div>
-                        <div className="text-neutral-300 font-semibold">
+                        <div className="text-gray-900 font-semibold">
                           Score Range
                         </div>
-                        <div className="text-neutral-400">
-                          {test.scoreRange}
-                        </div>
+                        <div className="text-gray-600">{test.scoreRange}</div>
                       </div>
                     </div>
 
                     {/* Test Sections */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-neutral-100 mb-3">
+                      <h4 className="font-semibold text-gray-900 mb-3">
                         Test Sections:
                       </h4>
                       <div className="grid grid-cols-1 gap-2">
@@ -268,8 +266,8 @@ const TestPrep = () => {
                             key={idx}
                             className="flex items-center space-x-2"
                           >
-                            <CheckCircle className="h-4 w-4 text-neutral-300" />
-                            <span className="text-neutral-400">{section}</span>
+                            <CheckCircle className="h-4 w-4 text-[#035079]" />
+                            <span className="text-gray-700">{section}</span>
                           </div>
                         ))}
                       </div>
@@ -277,7 +275,7 @@ const TestPrep = () => {
 
                     {/* Preparation Tips */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-neutral-100 mb-3">
+                      <h4 className="font-semibold text-gray-900 mb-3">
                         Preparation Tips:
                       </h4>
                       <div className="grid grid-cols-1 gap-2">
@@ -286,10 +284,8 @@ const TestPrep = () => {
                             key={idx}
                             className="flex items-center space-x-2"
                           >
-                            <div className="w-2 h-2 bg-neutral-400 rounded-full"></div>
-                            <span className="text-neutral-400 text-sm">
-                              {tip}
-                            </span>
+                            <div className="w-2 h-2 bg-[#035079] rounded-full"></div>
+                            <span className="text-gray-700 text-sm">{tip}</span>
                           </div>
                         ))}
                       </div>
@@ -297,14 +293,14 @@ const TestPrep = () => {
 
                     {/* Accepted Countries */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-neutral-100 mb-3">
+                      <h4 className="font-semibold text-gray-900 mb-3">
                         Widely Accepted In:
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {test.countries.map((country, idx) => (
                           <span
                             key={idx}
-                            className="bg-neutral-800 text-neutral-300 px-3 py-1 rounded-full text-sm"
+                            className="bg-blue-50 text-[#035079] px-3 py-1 rounded-full text-sm border border-[#035079]/20"
                           >
                             {country}
                           </span>
@@ -314,7 +310,7 @@ const TestPrep = () => {
 
                     <Link
                       to="/contact"
-                      className="bg-neutral-200 hover:bg-neutral-300 text-neutral-900 px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
+                      className="bg-[#035079] hover:bg-[#024461] text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
                     >
                       Enroll for {test.name}
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -335,19 +331,19 @@ const TestPrep = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-neutral-900 to-neutral-800">
+      <section className="py-16 bg-gradient-to-r from-[#035079] to-[#024461]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-neutral-50 mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Start Your Test Preparation Today
           </h2>
-          <p className="text-xl text-neutral-400 mb-8">
+          <p className="text-xl text-blue-100 mb-8">
             Join our proven test preparation programs and achieve your target
             scores with confidence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-neutral-200 text-neutral-900 hover:bg-neutral-300 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="bg-white text-[#035079] hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Book Free Demo Class
               <ArrowRight className="ml-2 h-5 w-5" />

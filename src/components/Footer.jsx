@@ -14,7 +14,7 @@ import Logo from "../Assets/Logo_BlueBG.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 text-white">
+    <footer className="bg-[#035085] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

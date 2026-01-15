@@ -117,19 +117,19 @@ const StudyDestinations = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-black to-gray-900 text-white py-20">
+      <section className="bg-gradient-to-br from-[#035079] to-[#024461] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Study Destinations Around the World
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
               Explore top study destinations and find the perfect country for
               your international education journey.
             </p>
             <Link
               to="/contact"
-              className="bg-gray-100 hover:bg-gray-200 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+              className="bg-white hover:bg-blue-50 text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
             >
               Get Personalized Guidance
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -181,23 +181,23 @@ const StudyDestinations = () => {
                   {/* Quick Stats */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center space-x-2">
-                      <MapPin className="h-5 w-5 text-black" />
+                      <MapPin className="h-5 w-5 text-[#035079]" />
                       <span className="text-gray-800">
                         {dest.universities} Universities
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Users className="h-5 w-5 text-black" />
+                      <Users className="h-5 w-5 text-[#035079]" />
                       <span className="text-gray-800">
                         {dest.students} Students
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <DollarSign className="h-5 w-5 text-black" />
+                      <DollarSign className="h-5 w-5 text-[#035079]" />
                       <span className="text-gray-800">{dest.tuition}/year</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Clock className="h-5 w-5 text-black" />
+                      <Clock className="h-5 w-5 text-[#035079]" />
                       <span className="text-gray-800">{dest.duration}</span>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ const StudyDestinations = () => {
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {dest.highlights.map((highlight, idx) => (
                         <li key={idx} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-gray-800 rounded-full"></div>
+                          <div className="w-2 h-2 bg-[#035079] rounded-full"></div>
                           <span className="text-gray-700 text-sm">
                             {highlight}
                           </span>
@@ -221,7 +221,7 @@ const StudyDestinations = () => {
 
                   <Link
                     to={`/country/${dest.country.toLowerCase()}`}
-                    className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center w-full justify-center"
+                    className="bg-[#035079] hover:bg-[#024461] text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center w-full justify-center"
                   >
                     Explore {dest.country}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -234,18 +234,18 @@ const StudyDestinations = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-[#035079] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Can't Decide Which Country Is Right for You?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-blue-100 mb-8">
             Our expert counselors will help you choose the perfect destination
             based on your goals, budget, and preferences.
           </p>
           <Link
             to="/contact"
-            className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-[#035079] hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Get Free Country Selection Guidance
             <ArrowRight className="ml-2 h-5 w-5" />

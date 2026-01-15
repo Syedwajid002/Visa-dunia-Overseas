@@ -88,19 +88,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="h-6 w-6 text-black" />,
+      icon: <Phone className="h-6 w-6 text-[#035079]" />,
       title: "Phone Numbers",
       details: ["+91 99632 05226", "+91 86390 42341"],
       subtitle: "Call us anytime",
     },
     {
-      icon: <Mail className="h-6 w-6 text-black" />,
+      icon: <Mail className="h-6 w-6 text-[#035079]" />,
       title: "Email Addresses",
       details: ["info@visadunia.in"],
       subtitle: "We'll respond within 24 hours",
     },
     {
-      icon: <MapPin className="h-6 w-6 text-black" />,
+      icon: <MapPin className="h-6 w-6 text-[#035079]" />,
       title: "Office Address",
       details: [
         "Visa Dunia Overseas",
@@ -111,7 +111,7 @@ const Contact = () => {
       subtitle: "Visit us for face-to-face consultation",
     },
     {
-      icon: <Clock className="h-6 w-6 text-black" />,
+      icon: <Clock className="h-6 w-6 text-[#035079]" />,
       title: "Office Hours",
       details: [
         "Monday - Friday: 9:00 AM - 7:00 PM",
@@ -147,7 +147,7 @@ const Contact = () => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="max-w-md mx-auto text-center p-8 bg-white shadow-lg rounded-xl">
-          <CheckCircle className="h-16 w-16 text-black mx-auto mb-6" />
+          <CheckCircle className="h-16 w-16 text-[#035079] mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h2>
           <p className="text-lg text-gray-700 mb-6">
             Your Request has been Received successfully. We'll get back to you
@@ -155,7 +155,7 @@ const Contact = () => {
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
-            className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-[#035079] hover:bg-[#024563] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             Send Another Message
           </button>
@@ -167,7 +167,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-[#035079] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             Get In Touch With Us
@@ -204,7 +204,7 @@ const Contact = () => {
                       value={formData.from_name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#035079] focus:border-[#035079] transition-colors"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -222,7 +222,7 @@ const Contact = () => {
                       value={formData.from_email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#035079] focus:border-[#035079] transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -241,7 +241,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#035079] focus:border-[#035079] transition-colors"
                       placeholder="+91 99632 XXXXX"
                     />
                   </div>
@@ -298,7 +298,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#035079] focus:border-[#035079] transition-colors resize-none"
                       placeholder="Tell us about your study abroad goals..."
                     />
                   </div>
@@ -306,7 +306,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-black hover:bg-gray-800 disabled:bg-gray-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
+                    className="w-full bg-[#035079] hover:bg-[#024563] disabled:bg-gray-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center"
                   >
                     {isSubmitting ? (
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
@@ -371,15 +371,15 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-start justify-center space-x-2">
-                    <MapPin className="h-5 w-5 text-black mt-1" />
+                    <MapPin className="h-5 w-5 text-[#035079] mt-1" />
                     <p className="text-sm">{office.address}</p>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <Phone className="h-5 w-5 text-black" />
+                    <Phone className="h-5 w-5 text-[#035079]" />
                     <p className="text-sm">{office.phone}</p>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <Mail className="h-5 w-5 text-black" />
+                    <Mail className="h-5 w-5 text-[#035079]" />
                     <p className="text-sm">{office.email}</p>
                   </div>
                 </div>

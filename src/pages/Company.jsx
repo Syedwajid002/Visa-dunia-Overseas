@@ -6,16 +6,16 @@ import Ashwaq from "../Assets/Ashwaq.png";
 import Nandini from "../Assets/Nandini.png";
 
 const theme = {
-  // Core palette
-  primary: "text-gray-200", // for icons
-  primaryBg: "bg-neutral-900", // darkest backgrounds
-  primaryHover: "hover:bg-neutral-800", // hover shade
+  // Core palette - Using #035079
+  primary: "text-[#035079]", // for icons
+  primaryBg: "bg-[#035079]", // main backgrounds
+  primaryHover: "hover:bg-[#024563]", // hover shade (darker)
   secondary: "text-gray-100", // secondary text
-  secondaryBg: "bg-neutral-800", // alternate background
+  secondaryBg: "bg-[#024563]", // alternate background
   secondaryLight: "bg-neutral-100", // light background cards
-  highlight: "text-gray-400", // highlight text (achievements)
+  highlight: "text-[#0470a8]", // highlight text (lighter shade)
   lightText: "text-gray-300", // lighter body text
-  darkText: "text-gray-900", // for headings on light bg
+  darkText: "text-[#035079]", // for headings on light bg
   midText: "text-gray-600", // muted text
   baseBg: "bg-white", // white background sections
   altBg: "bg-neutral-50", // very light grey section
@@ -89,7 +89,7 @@ const Company = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-20">
+      <section className="bg-gradient-to-br from-[#035079] to-[#024563] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -269,7 +269,7 @@ const Company = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-white text-neutral-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-[#035079] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Start Your Journey with Us
             <ArrowRight className="ml-2 h-5 w-5" />

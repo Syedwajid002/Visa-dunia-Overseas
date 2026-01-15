@@ -209,7 +209,7 @@ const CountryPage = () => {
       flag: "🇩🇪",
       hero: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/221000/221197-North-Rhine-Westphalia.jpg",
       overview:
-        "Germany is Europe’s economic powerhouse offering world-class education, especially in engineering and sciences, often with very low tuition fees.",
+        "Germany is Europe's economic powerhouse offering world-class education, especially in engineering and sciences, often with very low tuition fees.",
       stats: {
         universities: "400+",
         students: "350K+",
@@ -282,7 +282,7 @@ const CountryPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-20">
+      <section className="relative bg-[#035079] text-white py-20">
         <div className="absolute inset-0">
           <img
             src={data.hero}
@@ -300,7 +300,7 @@ const CountryPage = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-[#035079] hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Apply for {data.name}
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -335,7 +335,7 @@ const CountryPage = () => {
               },
             ].map((stat, idx) => (
               <div key={idx} className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="h-8 w-8 text-black mx-auto mb-2">
+                <div className="h-8 w-8 text-[#035079] mx-auto mb-2">
                   {stat.icon}
                 </div>
                 <div className="text-2xl font-bold">{stat.value}</div>
@@ -358,7 +358,7 @@ const CountryPage = () => {
                 key={index}
                 className="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm border"
               >
-                <CheckCircle className="h-6 w-6 text-black" />
+                <CheckCircle className="h-6 w-6 text-[#035079]" />
                 <span className="text-gray-800">{highlight}</span>
               </div>
             ))}
@@ -378,7 +378,7 @@ const CountryPage = () => {
                 key={index}
                 className="bg-gray-50 p-6 rounded-lg border text-center hover:shadow-md transition-shadow"
               >
-                <Award className="h-8 w-8 text-black mx-auto mb-3" />
+                <Award className="h-8 w-8 text-[#035079] mx-auto mb-3" />
                 <h3 className="font-semibold">{university}</h3>
               </div>
             ))}
@@ -415,13 +415,15 @@ const CountryPage = () => {
                 className="bg-white p-8 rounded-xl shadow-sm border"
               >
                 <h3 className="text-xl font-bold mb-6 flex items-center">
-                  <span className="h-6 w-6 text-black mr-2">{req.icon}</span>
+                  <span className="h-6 w-6 text-[#035079] mr-2">
+                    {req.icon}
+                  </span>
                   {req.title}
                 </h3>
                 <ul className="space-y-3">
                   {req.items.map((item, i) => (
                     <li key={i} className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-black" />
+                      <CheckCircle className="h-5 w-5 text-[#035079]" />
                       <span className="text-gray-800">{item}</span>
                     </li>
                   ))}
@@ -437,14 +439,14 @@ const CountryPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-gray-50 p-8 rounded-xl border">
             <h3 className="text-2xl font-bold mb-6 flex items-center">
-              <DollarSign className="h-6 w-6 text-black mr-2" />
+              <DollarSign className="h-6 w-6 text-[#035079] mr-2" />
               Living Costs
             </h3>
             <p className="text-lg text-gray-700">{data.livingCost}</p>
           </div>
           <div className="bg-gray-50 p-8 rounded-xl border">
             <h3 className="text-2xl font-bold mb-6 flex items-center">
-              <Users className="h-6 w-6 text-black mr-2" />
+              <Users className="h-6 w-6 text-[#035079] mr-2" />
               Work Rights
             </h3>
             <p className="text-lg text-gray-700">{data.workRights}</p>
@@ -453,7 +455,7 @@ const CountryPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-[#035079]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Ready to Study in {data.name}?
@@ -465,14 +467,14 @@ const CountryPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="bg-white text-[#035079] hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Apply for {data.name}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/test-prep"
-              className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Prepare for Tests
             </Link>

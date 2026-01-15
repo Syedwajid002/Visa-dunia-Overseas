@@ -118,7 +118,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-black to-gray-800 text-white py-20">
+      <section className="bg-gradient-to-r from-[#035079] to-[#024563] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -197,7 +197,7 @@ const Gallery = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className="h-4 w-4 text-gray-800 fill-current"
+                        className="h-4 w-4 text-[#035079] fill-current"
                       />
                     ))}
                   </div>
@@ -243,7 +243,7 @@ const Gallery = () => {
       </section>
 
       {/* Statistics */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-[#035079] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -269,7 +269,7 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-[#024563]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Want to Be Our Next Success Story?
@@ -280,7 +280,7 @@ const Gallery = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-white text-black hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-[#035079] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Start Your Journey
             <ArrowRight className="ml-2 h-5 w-5" />

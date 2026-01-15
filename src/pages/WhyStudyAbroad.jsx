@@ -12,37 +12,37 @@ import {
 const WhyStudyAbroad = () => {
   const benefits = [
     {
-      icon: <Globe className="h-12 w-12 text-gray-800" />,
+      icon: <Globe className="h-12 w-12 text-[#035079]" />,
       title: "Global Exposure",
       description:
         "Experience diverse cultures, languages, and perspectives that broaden your worldview and enhance your personal growth.",
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-gray-800" />,
+      icon: <TrendingUp className="h-12 w-12 text-[#035079]" />,
       title: "Career Advancement",
       description:
         "International education opens doors to global career opportunities and higher earning potential in your field.",
     },
     {
-      icon: <BookOpen className="h-12 w-12 text-gray-800" />,
+      icon: <BookOpen className="h-12 w-12 text-[#035079]" />,
       title: "Quality Education",
       description:
         "Access to world-renowned universities with cutting-edge research facilities and innovative teaching methods.",
     },
     {
-      icon: <Users className="h-12 w-12 text-gray-800" />,
+      icon: <Users className="h-12 w-12 text-[#035079]" />,
       title: "Networking Opportunities",
       description:
         "Build international connections and friendships that last a lifetime and benefit your professional journey.",
     },
     {
-      icon: <Award className="h-12 w-12 text-gray-800" />,
+      icon: <Award className="h-12 w-12 text-[#035079]" />,
       title: "Personal Development",
       description:
         "Develop independence, adaptability, and problem-solving skills that make you stand out in any field.",
     },
     {
-      icon: <Briefcase className="h-12 w-12 text-gray-800" />,
+      icon: <Briefcase className="h-12 w-12 text-[#035079]" />,
       title: "Immigration Pathways",
       description:
         "Many countries offer post-study work permits and pathways to permanent residency for international students.",
@@ -59,12 +59,12 @@ const WhyStudyAbroad = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-[#035079] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             Why Study Abroad?
           </h1>
-          <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto">
             Discover the life-changing benefits of international education and
             why millions of students choose to study abroad every year.
           </p>
@@ -77,7 +77,7 @@ const WhyStudyAbroad = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-black mb-2">
+                <div className="text-4xl lg:text-5xl font-bold text-[#035079] mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -104,7 +104,7 @@ const WhyStudyAbroad = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow"
+                className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-200"
               >
                 <div className="flex justify-center mb-6">{benefit.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
@@ -120,7 +120,7 @@ const WhyStudyAbroad = () => {
       </section>
 
       {/* How We Help Section */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-[#035079] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -150,7 +150,7 @@ const WhyStudyAbroad = () => {
                     <div className="w-5 h-5 bg-white rounded-full flex-shrink-0 mt-1"></div>
                     <div>
                       <h3 className="font-semibold mb-1">{item.title}</h3>
-                      <p className="text-gray-300">{item.desc}</p>
+                      <p className="text-blue-100">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -179,7 +179,7 @@ const WhyStudyAbroad = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-black hover:bg-white hover:text-black border border-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-[#035079] hover:bg-[#024461] border border-[#035079] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Book Free Consultation
           </Link>

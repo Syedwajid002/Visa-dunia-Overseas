@@ -12,11 +12,11 @@ import {
 } from "lucide-react";
 
 const theme = {
-  primary: "text-black",
-  primaryBg: "bg-black",
-  primaryHover: "hover:bg-gray-800",
-  accent: "text-gray-700",
-  accentBg: "bg-gray-100",
+  primary: "text-[#035079]",
+  primaryBg: "bg-[#035079]",
+  primaryHover: "hover:bg-[#024461]",
+  accent: "text-[#046896]",
+  accentBg: "bg-blue-50",
   lightText: "text-gray-300",
   midText: "text-gray-600",
   darkText: "text-gray-900",
@@ -141,13 +141,13 @@ const Immigration = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-black to-gray-800 text-white py-20">
+      <section className="bg-gradient-to-br from-[#035079] to-[#024461] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Student Skilled Immigration Programs
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
               Turn your international education into permanent residency with
               our expert immigration guidance and support.
             </p>
@@ -214,7 +214,7 @@ const Immigration = () => {
                         alt={country.country}
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[#035079] bg-opacity-40 flex items-center justify-center">
                         <div className="text-center text-white">
                           <div className="text-6xl mb-4">{country.flag}</div>
                           <h3 className="text-3xl font-bold">
@@ -256,7 +256,7 @@ const Immigration = () => {
                                         key={reqIdx}
                                         className="flex items-center space-x-2"
                                       >
-                                        <CheckCircle className="h-4 w-4 text-black" />
+                                        <CheckCircle className="h-4 w-4 text-[#035079]" />
                                         <span className="text-gray-600 text-sm">
                                           {req}
                                         </span>
@@ -269,7 +269,7 @@ const Immigration = () => {
                                     Processing Time:
                                   </h5>
                                   <div className="flex items-center space-x-2">
-                                    <Clock className="h-4 w-4 text-black" />
+                                    <Clock className="h-4 w-4 text-[#035079]" />
                                     <span className="text-gray-700">
                                       {program.processing}
                                     </span>
@@ -290,13 +290,13 @@ const Immigration = () => {
       </section>
 
       {/* Process */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-[#035079] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Our Immigration Process
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-blue-100">
               Step-by-step guidance for your immigration journey
             </p>
           </div>
@@ -322,11 +322,11 @@ const Immigration = () => {
               },
             ].map((step, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gray-800 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                <div className="w-16 h-16 bg-white/20 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-blue-100 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -341,13 +341,13 @@ const Immigration = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Start Your Immigration Journey Today
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-blue-100 mb-8">
             Get a free assessment of your immigration eligibility and explore
             your options with our expert counselors.
           </p>
           <Link
             to="/contact"
-            className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
+            className="bg-white text-[#035079] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center"
           >
             Get Free Assessment
             <ArrowRight className="ml-2 h-5 w-5" />

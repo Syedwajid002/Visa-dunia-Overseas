@@ -5,22 +5,22 @@ import { ArrowRight, Users, Award, Globe, BookOpen, Star } from "lucide-react";
 const Home = () => {
   const features = [
     {
-      icon: <Users className="h-8 w-8 text-gray-800" />,
+      icon: <Users className="h-8 w-8 text-[#035079]" />,
       title: "Expert Counselors",
       description: "Experienced professionals to guide your education journey",
     },
     {
-      icon: <Award className="h-8 w-8 text-gray-800" />,
+      icon: <Award className="h-8 w-8 text-[#035079]" />,
       title: "100% Success Rate",
       description: "Proven track record of successful admissions",
     },
     {
-      icon: <Globe className="h-8 w-8 text-gray-800" />,
+      icon: <Globe className="h-8 w-8 text-[#035079]" />,
       title: "Global Network",
       description: "Partnerships with universities worldwide",
     },
     {
-      icon: <BookOpen className="h-8 w-8 text-gray-800" />,
+      icon: <BookOpen className="h-8 w-8 text-[#035079]" />,
       title: "Complete Support",
       description: "End-to-end assistance from application to arrival",
     },
@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-black to-gray-800 text-white py-20">
+      <section className="bg-gradient-to-br from-[#035079] to-[#024563] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -69,14 +69,14 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                  className="bg-white hover:bg-gray-200 text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
                 >
                   Get Started Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
                   to="/study-destinations"
-                  className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
                 >
                   Explore Destinations
                 </Link>
@@ -171,7 +171,7 @@ const Home = () => {
                   <p className="text-gray-600 mb-4">{dest.description}</p>
                   <Link
                     to={`/country/${dest.country.toLowerCase()}`}
-                    className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded font-semibold transition-colors inline-flex items-center"
+                    className="bg-[#035079] hover:bg-[#024563] text-white px-4 py-2 rounded font-semibold transition-colors inline-flex items-center"
                   >
                     Explore {dest.country}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -218,7 +218,7 @@ const Home = () => {
               },
             ].map((process, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#035079] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {process.step}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{process.title}</h3>
@@ -230,7 +230,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-[#024563]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -272,7 +272,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-[#035079]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Ready to Start Your Journey?
@@ -283,14 +283,14 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="bg-white text-[#035079] hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Book Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/gallery"
-              className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#035079] px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               View Success Stories
             </Link>
